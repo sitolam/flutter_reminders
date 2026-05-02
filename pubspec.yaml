@@ -1,0 +1,34 @@
+name: flutter_reminders
+description: A Material You reminder app with periodic notifications.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Material You dynamic color (pulls system wallpaper colors on Android 12+)
+  dynamic_color: ^1.7.0
+
+  # Local notifications + scheduling
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # Permissions (Android 13+ POST_NOTIFICATIONS, exact alarms)
+  permission_handler: ^11.3.1
+
+  # Persistence
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
